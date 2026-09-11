@@ -1,0 +1,1095 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+            name="description"
+            content="Oral Salud — Odontología clínica y radiología dental digital en San Bernardo."
+    >
+
+    <title>Oral Salud | Odontología en la era digital</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* =========================================
+           AJUSTES EXCLUSIVOS DE ESTA LANDING
+           ========================================= */
+
+        /* ---------- MAPA ---------- */
+
+        .clinic-map {
+            overflow: hidden;
+            border-radius: 18px;
+        }
+
+        .clinic-map iframe {
+            display: block;
+            width: 100%;
+            height: 390px;
+            border: 0;
+        }
+
+        /* ---------- REDES SOCIALES ---------- */
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .social-label {
+            font-weight: 700;
+        }
+
+        .social-links a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .social-links a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* ---------- TARJETAS DE ESPECIALIDADES ---------- */
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .service-card {
+            padding: 1.2rem;
+            border-radius: 14px;
+            min-height: auto;
+        }
+
+        .service-card .service-icon {
+            width: 38px;
+            height: 38px;
+            font-size: 0.75rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .service-card p {
+            font-size: 0.88rem;
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        /* ---------- TARJETAS CENTRO RADIOLÓGICO ---------- */
+
+        .radiology-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .radiology-grid .service-card {
+            padding: 1.2rem;
+            border-radius: 14px;
+            min-height: auto;
+        }
+
+        .radiology-grid .service-icon {
+            width: 38px;
+            height: 38px;
+            font-size: 0.7rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .radiology-grid h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .radiology-grid p {
+            font-size: 0.88rem;
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+
+        @media (max-width: 900px) {
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .radiology-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+
+            .clinic-map iframe {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .radiology-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card,
+            .radiology-grid .service-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================================
+     HEADER
+     ========================================= -->
+
+<header class="site-header" id="inicio">
+
+    <div class="container nav-wrap">
+
+        <a class="brand"
+                href="#inicio"
+                aria-label="Oral Salud, inicio">
+            <img
+                    src="images/logo.png"
+                    class="brand-logo">
+        </a>
+
+        <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav
+                class="main-nav"
+                id="main-nav"
+                aria-label="Navegación principal">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#especialidades">Especialidades</a>
+            <a href="#radiologia">Radiología</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <div class="hero-copy">
+
+                <p class="eyebrow">
+                    ODONTOLOGÍA EN LA ERA DIGITAL
+                </p>
+
+                <h2>
+                    Tecnología, precisión y cercanía
+                    para cuidar tu sonrisa.
+                </h2>
+
+                <p class="hero-text">
+                    Atención odontológica integral y radiología dental
+                    digital en un mismo lugar, con un equipo profesional
+                    enfocado en las personas.
+                </p>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="hero-image">
+                    <img src="images/frontis.jpg" alt="Clínica Oral Salud">
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         NOSOTROS
+         ========================================= -->
+
+    <section
+            class="section section-soft"
+            id="nosotros"
+    >
+
+        <div class="container two-column">
+
+            <div>
+
+                <p class="eyebrow">
+                    NUESTRA MISIÓN
+                </p>
+
+                <h2>
+                    Somos personas atendiendo personas.
+                </h2>
+
+                <p>
+                    En Oral Salud buscamos entregar una experiencia
+                    odontológica cercana, profesional y apoyada en
+                    tecnología moderna.
+                </p>
+
+                <p>
+                    Integramos atención clínica, especialidades
+                    odontológicas y servicios de radiología digital
+                    para facilitar el diagnóstico y tratamiento
+                    de nuestros pacientes.
+                </p>
+
+            </div>
+
+
+            <div class="content-image image-placeholder">
+
+                <img src="images/equipo2.jpg" alt="Somos Personas antendiendo Personas">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         ESPECIALIDADES
+         ========================================= -->
+
+    <section
+            class="section"
+            id="especialidades"
+    >
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        ATENCIÓN INTEGRAL
+                    </p>
+
+                    <h2>
+                        Especialidades para cuidar tu sonrisa.
+                    </h2>
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <article class="service-card">
+
+
+
+                    <h3>
+                        Implantología
+                    </h3>
+
+                    <p>
+                        Recupera función, seguridad y estética.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+
+
+                    <h3>
+                        Ortodoncia
+                    </h3>
+
+                    <p>
+                        Una sonrisa saludable y armónica.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+
+
+                    <h3>
+                        Odontopediatría
+                    </h3>
+
+                    <p>
+                        Atención especialmente pensada para niños.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+
+
+                    <h3>
+                        Endodoncia
+                    </h3>
+
+                    <p>
+                        Tratamientos para conservar tus piezas dentales.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+
+
+                    <h3>
+                        Periodoncia
+                    </h3>
+
+                    <p>
+                        Cuidado de encías y tejidos de soporte.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+
+
+                    <h3>
+                        Odontología estética
+                    </h3>
+
+                    <p>
+                        Mejora la apariencia y armonía de tu sonrisa.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         IMPLANTOLOGÍA
+         ========================================= -->
+
+    <section
+            class="section feature-section"
+            id="implantes"
+    >
+
+        <div class="container two-column feature-grid">
+
+            <div class="content-image image-placeholder dark-placeholder">
+                <img src="images/implante.jpg" alt="Implantes Dentales">
+            </div>
+
+
+            <div>
+
+                <p class="eyebrow">
+                    IMPLANTOLOGÍA
+                </p>
+
+                <h2>
+                    Recupera tu sonrisa con confianza.
+                </h2>
+
+                <p>
+                    Los implantes dentales pueden ser una alternativa
+                    para recuperar dientes ausentes y mejorar la función
+                    y estética de tu sonrisa.
+                </p>
+
+                <ul class="check-list">
+
+                    <li>
+                        Evaluación profesional personalizada.
+                    </li>
+
+                    <li>
+                        Tecnología de apoyo al diagnóstico y planificación.
+                    </li>
+
+                    <li>
+                        Acompañamiento durante el tratamiento.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CENTRO RADIOLÓGICO
+         ========================================= -->
+
+    <section
+            class="section section-soft"
+            id="radiologia"
+    >
+
+        <div class="container">
+
+            <div class="content-image image-placeholder dark-placeholder">
+                <img src="images/scanner.jpg" alt="Scanner Digital">
+            </div>
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>
+                        CENTRO RADIOLÓGICO DENTAL DIGITAL
+                    </h2>
+
+                    <h3>
+                        Diagnóstico digital, rápido y preciso.
+                    </h3>
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="radiology-grid">
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        3D
+                    </div>
+
+                    <h3>
+                        Scanner 3D
+                    </h3>
+
+                    <p>
+                        Imágenes digitales para evaluación
+                        y planificación clínica.
+                    </p>
+
+                </article>
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        RX
+                    </div>
+
+                    <h3>
+                        Radiografias Panorámicas
+                    </h3>
+
+                    <p>
+                        Radiografías con Visión general de las estructuras dentales.
+                    </p>
+
+                </article>
+
+
+
+
+
+                <article class="service-card">
+
+                    <div class="service-icon">
+                        ORT
+                    </div>
+
+                    <h3>
+                        Ortodoncia
+                    </h3>
+
+                    <p>
+                        Estudios radiológicos para tratamientos
+                        de ortodoncia.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         POR QUÉ ORAL SALUD
+         ========================================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <p class="eyebrow">
+                    ¿POR QUÉ ORAL SALUD?
+                </p>
+
+                <h2>
+                    Un solo lugar para acompañar tu tratamiento.
+                </h2>
+
+            </div>
+
+
+            <div class="benefit-grid">
+
+                <article>
+
+                    <h3>
+                        Experiencia profesional
+                    </h3>
+
+                    <p>
+                        Un equipo orientado a entregar atención
+                        odontológica integral.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Tecnología
+                    </h3>
+
+                    <p>
+                        Herramientas digitales para diagnóstico,
+                        planificación y radiología.
+                    </p>
+
+                </article>
+
+
+                <article>
+
+                    <h3>
+                        Atención cercana
+                    </h3>
+
+                    <p>
+                        Buscamos que cada paciente entienda su
+                        tratamiento y se sienta acompañado.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CTA
+         ========================================= -->
+
+    <section class="cta-section">
+
+        <div class="container cta-inner">
+
+            <div>
+
+                <p class="eyebrow">
+                    DA EL PRIMER PASO
+                </p>
+
+                <h2>
+                    ¿Quieres conocer qué tratamiento necesitas?
+                </h2>
+
+                <p>
+                    Agenda una evaluación o escríbenos directamente
+                    por WhatsApp.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CONTACTO + MAPA
+         ========================================= -->
+
+    <section
+            class="section contact-section"
+            id="contacto"
+    >
+
+        <div class="container contact-grid">
+
+            <div>
+
+                <p class="eyebrow">
+                    CONTACTO
+                </p>
+
+                <h2>
+                    Estamos en <br> San Bernardo
+                </h2>
+
+
+                <div class="contact-list">
+
+                    <p>
+
+                        <strong>
+                            Dirección
+                        </strong>
+
+                        <br>
+
+                        Eyzaguirre 732,
+                        San Bernardo,
+                        Región Metropolitana
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Teléfono
+                        </strong>
+
+                        <br>
+
+                        <a href="tel:+56229048983">
+                            2 2904 8983
+                        </a>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            WhatsApp
+                        </strong>
+
+                        <br>
+
+                        <a
+                                href="https://wa.me/56978604187"
+                                target="_blank"
+                                rel="noopener"
+                        >
+                            +56 9 7860 4187
+                        </a>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <br>
+
+                        <a href="mailto:contacto.oralsaludltda@gmail.com">
+                            contacto.oralsaludltda@gmail.com
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="clinic-map">
+
+                <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=-70.7095%2C-33.5975%2C-70.7048%2C-33.5957&layer=mapnik&marker=-33.5966407%2C-70.7071857"
+                        title="Ubicación de Oral Salud en Eyzaguirre 732, San Bernardo"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+
+                <a
+                        class="map-link"
+                        href="https://www.google.com/maps/search/?api=1&query=Eyzaguirre+732,+San+Bernardo,+Chile"
+                        target="_blank"
+                        rel="noopener"
+                >
+                    Ver ubicación en Google Maps →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+     ========================================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-inner">
+
+        <div>
+
+            <strong>
+                ORALSALUD LTDA
+            </strong>
+
+            <span>
+          Odontología Clínica & Radiología Digital
+        </span>
+
+        </div>
+
+
+        <div
+                class="social-links"
+                aria-label="Redes sociales de Oral Salud"
+        >
+
+        <span class="social-label">
+          Síguenos:
+        </span>
+
+            <a
+                    href="https://www.instagram.com/Oralsalud.drortiz"
+                    target="_blank"
+                    rel="noopener"
+            >
+                Instagram
+            </a>
+
+            <a
+                    href="https://www.facebook.com/p/OralSalud-San-Bernardo-61556264684194/"
+                    target="_blank"
+                    rel="noopener"
+            >
+                Facebook
+            </a>
+
+            <a
+                    href="https://www.tiktok.com/@oralsalud.drortiz"
+                    target="_blank"
+                    rel="noopener"
+            >
+                TikTok
+            </a>
+
+        </div>
+
+
+        <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            © <span id="year"></span>
+            Oral Salud LTDA
+            Todos los derechos reservados.
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="#">
+                Privacidad
+            </a>
+
+            <a href="#">
+                Términos
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
